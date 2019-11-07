@@ -20,6 +20,6 @@ printer = rule(
     attrs = {
         # Do not declare "name": It is added automatically.
         "number": attr.int(default = 1),
-        "deps": attr.label_list(allow_files = True),
+        "deps": attr.label_list(allow_files = [".scala"]),
     },
 )
